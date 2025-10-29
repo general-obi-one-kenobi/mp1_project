@@ -1,2 +1,2 @@
-# test_repo
-test repository
+# [Sample text]
+[Sample text]
