@@ -16,6 +16,7 @@ def game_start():
     if response1.lower() == 'd' or response1 == 'phishing':
         print("\033[H\033[J",end="")
         typing_effect('Correct answer!\n\nNow for your second question:')
+        response2=input('Your options are:\nA: \nB: \nC: \nD: \n\nYour answer is:')
     else:
         print("\033[H\033[J",end="")
         typing_effect('\nWrong answer. YOU FAILED THE QUIZ! \nYou are sent back home and you open your bank account to find that there are ZERO DOLLARS LEFT!')
