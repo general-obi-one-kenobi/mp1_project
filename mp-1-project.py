@@ -17,12 +17,12 @@ def start():
     print("\033[H\033[J",end="")
     print('You wake up to find yourself strapped to a chair in a strange room\nwearing only your pajamas and none of the valuables you keep on your\nperson. You look around and find that you are in a trivia game run by\nblack-hat hackers with ties to the mafia. You wonder: "Is this because I helped stop some ransomware?"\n')
     time.sleep(0.5)
-    print('The host announces:\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
+    print('The host announces:\n\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
     time.sleep(0.5)
     print('Do you want to play or not? Type "y" for yes or "n" for no. Press enter\nto confirm answer selection for all questions including this one.\n')
     start_quiz=input()
     if start_quiz.lower() == 'y':
-        print('You must respond only with the letter of your answer choice.')
+        print('\nYou must respond only with the letter of your answer choice.')
         question_1()
     else:
         print("\nThe announcer takes out a golden Audemars Piguet watch from his pocket.\nYou recognize it as YOUR AP Royal Oak that you received as a birthday\ngift from your best friend. You watch sadly as he sells the watch to a\nwealthy audience member for a large sum of money.\n")
@@ -61,7 +61,7 @@ def question_2():
         if restart.lower() == '':
             start()
 def question_3():
-    typing_effect("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a person's age in a programming language?")
+    typing_effect("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a\nperson's age in a programming language?")
     response=input('Your options are:\nA: String\nB: Integer\nC: Boolean\nD: Floating point\n\nYour answer is: ')
     if response.lower() == 'b':
         print("\033[H\033[J",end="")
