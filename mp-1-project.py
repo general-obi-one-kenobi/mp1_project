@@ -33,7 +33,7 @@ def start():
         else:
             start()
 def question_1():
-    typing_effect('\nYour first question: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
+    print('\nYour first question: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
     response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is: ')
     if response.lower() == 'd':
         print("\033[H\033[J",end="")
@@ -48,7 +48,7 @@ def question_1():
         else:
             start()
 def question_2():
-    typing_effect('Correct answer!\n\nNow for your second question: What component of a computer is responsible\nfor executing instructions and performing calculations?\n')
+    print('Correct answer!\n\nNow for your second question: What component of a computer is responsible\nfor executing instructions and performing calculations?\n')
     response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
@@ -61,7 +61,7 @@ def question_2():
         if restart.lower() == '':
             start()
 def question_3():
-    typing_effect("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a\nperson's age in a programming language?\n")
+    print("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a\nperson's age in a programming language?\n")
     response=input('Your options are:\nA: String\nB: Integer\nC: Boolean\nD: Floating point\n\nYour answer is: ')
     if response.lower() == 'b':
         print("\033[H\033[J",end="")
@@ -76,7 +76,7 @@ def question_3():
         else:
             start()
 def question_4():
-    typing_effect("Correct answer!\n\nNow for your fourth question: Which protocol is primarily responsible for\ntransmitting web pages across the internet?\n")
+    print("Correct answer!\n\nNow for your fourth question: Which protocol is primarily responsible for\ntransmitting web pages across the internet?\n")
     response=input('Your options are:\nA: Hypertext Transfer Protocol (HTTP)\nB: File Transfer Protocol (FTP)\nC: Simple Mail Transfer Protocol (SMTP)\nD: Transmission Control Protocol (TCP)\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -91,7 +91,7 @@ def question_4():
         else:
             start()
 def question_5():
-    typing_effect("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary\nnumber 1011?\n")
+    print("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary\nnumber 1011?\n")
     response=input('Your options are:\nA: 11\nB: 67\nC: 45 \nD: 12\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -106,7 +106,7 @@ def question_5():
         else:
             start()
 def question_6():
-    typing_effect("Correct answer!\n\nNow for your sixth question: In computer science, what term is used to\ndescribe how the execution time or memory requirements of an algorithm\nchange as the input size grows?\n")
+    print("Correct answer!\n\nNow for your sixth question: In computer science, what term is used to\ndescribe how the execution time or memory requirements of an algorithm\nchange as the input size grows?\n")
     response=input('Your options are:\nA: Recursion\nB: Abstraction\nC: Debugging\nD: Complexity\n\nYour answer is: ')
     if response.lower() == 'd':
         print("\033[H\033[J",end="")
@@ -121,7 +121,7 @@ def question_6():
         else:
             start()
 def question_7():
-    typing_effect("Correct answer!\n\nNow for your seventh question: If a program's code contains an IF\nstatement, and the condition inside the IF is False, what happens?\n")
+    print("Correct answer!\n\nNow for your seventh question: If a program's code contains an IF\nstatement, and the condition inside the IF is False, what happens?\n")
     response=input('Your options are:\nA: The code under the IF statement runs anyway\nB: The program ends\nC: The program skips to the next code block after the IF statement\nD: The previous code lines loop until the IF statement is true\n\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
@@ -136,7 +136,7 @@ def question_7():
         else:
             start()
 def question_8():
-    typing_effect("Correct answer!\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate one\n(like a free game or utility) is commonly known as what type of malware?\n")
+    print("Correct answer!\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate one\n(like a free game or utility) is commonly known as what type of malware?\n")
     response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -151,7 +151,7 @@ def question_8():
         else:
             start()
 def question_9():
-    typing_effect("Correct answer!\n\nNow for your ninth question: What is the main function of an operating\nsystem (OS)?\n")
+    print("Correct answer!\n\nNow for your ninth question: What is the main function of an operating\nsystem (OS)?\n")
     response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate and providing you with a user interface(UI)\nD: Allowing hackers to access your files\n\nYour answer is: ")
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
