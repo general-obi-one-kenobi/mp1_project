@@ -26,7 +26,7 @@ def start():
         question_1()
     else:
         print("\nThe announcer takes out a golden Audemars Piguet watch from his pocket.\nYou recognize it as YOUR AP Royal Oak that you received as a birthday\ngift from your best friend. You watch sadly as he sells the watch to a\nwealthy audience member for a large sum of money.\n")
-        print('YOU LOSE!\n')
+        print('YOU LOST!\n')
         restart=input('Press enter to restart: ')
         if restart.lower() == 'r':
                 start()
@@ -40,8 +40,8 @@ def question_1():
         question_2()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nYou are sent back home and you open your bank account to find that there are ZERO DOLLARS LEFT!')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nYou are sent back home and you open your bank account to find that there are ZERO DOLLARS LEFT!\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -55,8 +55,8 @@ def question_2():
         question_3()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer wheels in your expensive gaming setup on a rolling table.\nYou watch in horror as a large man walks on stage with a sledgehammer and destroys your setup.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer wheels your expensive gaming setup on stage using a rolling\ntable. You watch as a large man shows up with a sledgehammer and destroys\nyour setup.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -68,8 +68,8 @@ def question_3():
         question_4()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings in your LEGO UCS Millennium Falcon on a rolling\ntable. You watch as the announcer picks up the model and throws it on the\nground, causing the model to break.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings your expensive 3D printer and all of your 3D\nprinting projects on stage. He then breaks the printer and shatters the\nplastic prints with a hammer.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -83,8 +83,8 @@ def question_4():
         question_5()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer rolls in your Lamborghini Urus SUV and sets it on fire.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings your car on stage and sets it on fire.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -98,8 +98,8 @@ def question_5():
         question_6()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer picks up your phone and throws it on the floor. He then pulls out a gun and shoots the phone until the screen breaks.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer picks up your phone and throws it on the floor. He then\npulls a gun out of his pocket and shoots the phone until the screen\nbreaks.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -113,8 +113,8 @@ def question_6():
         question_7()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer connects his computer to the quiz screen and makes you watch as he hacks into your Google account. He then deletes all of your files and projects.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer connects his computer to the quiz screen and makes you\nwatch as he hacks into your Google account. He then deletes all of your\nfiles and projects.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -128,23 +128,23 @@ def question_7():
         question_8()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer brings all of your robotics projects into the room and throws them into a trash compactor, which crushes the robots.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings all of your robotics projects into the room and\nthrows them into a trash compactor, which crushes the robots.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
         else:
             start()
 def question_8():
-    print("Correct answer!\n\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate\none (like a free game or utility) is commonly known as what type of malware?\n")
+    print("Correct answer!\n\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate\none (like a free game or utility) is commonly known as what type of\nmalware?\n")
     response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
         question_9()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer projects a live feed of your house on the screen and makes you watch as his associates set it on fire. The house is empty, so no one is hurt.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer projects a live feed of your house on the screen and makes you watch as his associates set it on fire. The house is empty, so no one\nis hurt.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
@@ -158,24 +158,24 @@ def question_9():
         question_10()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots the dog.\nYou begin to cry as the injured dog crawls tries to crawl towards you.\n')
-        print('YOU LOSE!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. You watch in horror as he pulls a gun out of his pocket and shoots the dog. You begin to cry as the injured dog crawls tries to crawl\ntowards you in a desperate plea for help.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
         else:
             start()
 def question_10():
-    print("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to\nexecute 5 times, and an IF statement inside the loop causes a break\ncommand to execute on the 3rd iteration, how many times will the loop's body complete execution?\n")
+    print("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to\nexecute 5 times, and an IF statement inside the loop causes a break\ncommand to execute on the 3rd iteration, how many times will the loop's\nbody complete execution?\n")
     response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
-        typing_effect("'Y-you did it. I-I can't believe it. You actually did it. You answered\nall of the questions correctly. YOU WON! Here is a million dollars for\nyour ability to keep a cool head under pressure.' You are released from the chair and are given a check for a million dollars. You are then sent back home to enjoy your life.\n")
-        print('YOU WIN THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
+        typing_effect("'Y-you did it. I-I can't believe it. You actually did it. You answered\nall of the questions correctly. YOU WON THE GAME! Here is a million\ndollars for your ability to keep a cool head under pressure.' You are\nreleased from the chair and are given a check for a million dollars. You are then sent back home to enjoy your life.\n")
+        print('YOU WON!\nRestart by refreshing the console and give this to a friend to try.')
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots you. You watch your dog crying as you lose consciousness.\n')
-        print('YOU LOSE!')
+        print('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. He then pulls his gun out of his pocket and shoots you. You hear\nyour dog crying as you lose consciousness.\n')
+        print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
             start()
