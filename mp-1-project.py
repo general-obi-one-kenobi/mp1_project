@@ -7,7 +7,7 @@ def typing_effect(text):
         time.sleep(0.05)
 def game_start():
     print("\033[H\033[J",end="")
-    print('You wake up to find yourself in a strange room with only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
+    print('You wake up to find yourself in a strange room wearing only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
     time.sleep(0.5)
     print('The host announces:\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
     time.sleep(0.5)
@@ -15,40 +15,40 @@ def game_start():
     start_quiz=input()
     if start_quiz.lower() == 'y':
         print('You must respond only with the letter of your answer choice.\nYour first question: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
-        response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is:')
+        response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is: ')
         if response.lower() == 'd':
             print("\033[H\033[J",end="")
             typing_effect('Correct answer!\n\nNow for your second question: What component of a computer is responsible for executing instructions and performing calculations?\n')
-            response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is:')
+            response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is: ')
             if response.lower() == 'c':
                 print("\033[H\033[J",end="")
-                typing_effect('Correct answer!\n\nNow for your third question:')
-                response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is:')
-                if response.lower() == '':
+                typing_effect("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a person's age in a programming language?")
+                response=input('Your options are:\nA: String\nB: Integer\nC: Boolean\nD: Floating point\n\nYour answer is: ')
+                if response.lower() == 'b':
                     print("\033[H\033[J",end="")
                     typing_effect('Correct answer!\n\nNow for your fourth question:')
-                    response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is:')
+                    response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is: ')
                     if response.lower() == '' or response.lower() == '':
                         print("\033[H\033[J",end="")
-                        typing_effect('Correct answer!\n\nNow for your fifth question:')
+                        typing_effect('Correct answer!\n\nNow for your fifth question: ')
                     else:
                         print("\033[H\033[J",end="")
                         typing_effect('Wrong answer. YOU FAILED THE QUIZ! \nYou are th.')
-                        print('YOU DIED!')
+                        print('YOU LOSE!')
                         restart=input('Type "R" or "r" to restart:')
                         if restart.lower() == 'r':
                             game_start()
                 else:
                     print("\033[H\033[J",end="")
-                    typing_effect('Wrong answer. YOU FAILED THE QUIZ! \nYou are th.')
-                    print('YOU DIED!')
+                    typing_effect('Wrong answer. YOU FAILED THE QUIZ! \nThe announcer brings in your LEGO UCS Millennium Falcon on a rolling table. You watch as the announcer picks up the model and throws it on the ground, causing the model to collapse and some of the pieces break.')
+                    print('YOU LOSE!')
                     restart=input('Type "R" or "r" to restart:')
                     if restart.lower() == 'r':
                         game_start()
             else:
                 print("\033[H\033[J",end="")
-                typing_effect('Wrong answer. YOU FAILED THE QUIZ! \nYou are th.')
-                print('YOU DIED!')
+                typing_effect('Wrong answer. YOU FAILED THE QUIZ! \nThe announcer wheels in your expensive gaming setup on a rolling table.\nYou watch in horror as a large man walks on stage with a sledgehammer and destroys your setup\n')
+                print('YOU LOSE!')
                 restart=input('Type "R" or "r" to restart:')
                 if restart.lower() == 'r':
                     game_start()
