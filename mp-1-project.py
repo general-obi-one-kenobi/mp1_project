@@ -5,13 +5,21 @@ def typing_effect(text):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.05)
-def game_start():
+def start_game():
+    print("\033[H\033[J",end="")
+    print('This is a game about a wealthy white-hat hacker who is forced to complete\na dangerous quiz. Type "start" and press enter to start the game.')
+    start_input=input('Type "start" here and press enter: ')
+    if start_input.lower == 'start':
+        start()
+    else:
+        start_game()
+def start():
     print("\033[H\033[J",end="")
     print('You wake up to find yourself in a strange room wearing only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
     time.sleep(0.5)
     print('The host announces:\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
     time.sleep(0.5)
-    print('Do you want to play or not? Type "y" for yes or "n" for no.\n')
+    print('Do you want to play or not? Type "y" for yes or "n" for no. Press enter to confirm answer selection for all questions including this one.\n')
     start_quiz=input()
     if start_quiz.lower() == 'y':
         print('You must respond only with the letter of your answer choice.')
@@ -21,7 +29,7 @@ def game_start():
         print('YOU LOST!\n')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-                game_start()
+                start()
 def question_1():
     typing_effect('\nYour first question: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
     response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is: ')
@@ -34,7 +42,7 @@ def question_1():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_2():
     typing_effect('Correct answer!\n\nNow for your second question: What component of a computer is responsible for executing instructions and performing calculations?\n')
     response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is: ')
@@ -47,7 +55,7 @@ def question_2():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_3():
     typing_effect("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a person's age in a programming language?")
     response=input('Your options are:\nA: String\nB: Integer\nC: Boolean\nD: Floating point\n\nYour answer is: ')
@@ -60,7 +68,7 @@ def question_3():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_4():
     typing_effect("Correct answer!\n\nNow for your fourth question: Which protocol is primarily responsible for transmitting web pages across the internet?")
     response=input('Your options are:\nA: Hypertext Transfer Protocol (HTTP)\nB: File Transfer Protocol (FTP)\nC: Simple Mail Transfer Protocol (SMTP)\nD: Transmission Control Protocol (TCP)\n\nYour answer is: ')
@@ -73,7 +81,7 @@ def question_4():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_5():
     typing_effect("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary number 1011?")
     response=input('Your options are:\nA: 11\nB: 67\nC:45 \nD: 12\n\nYour answer is: ')
@@ -86,7 +94,7 @@ def question_5():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_6():
     typing_effect("Correct answer!\n\nNow for your sixth question: In computer science, what term is used to describe how the execution time or memory requirements of an algorithm change as the input size grows??")
     response=input('Your options are:\nA: Recursion\nB: Abstraction\nC: Debugging\nD: Complexity\n\nYour answer is: ')
@@ -99,10 +107,9 @@ def question_6():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_7():
-    typing_effect("Correct answer!\n\nNow for your seventh question: 
-If a program's code contains an IF statement, and the condition inside the IF is False, what happens??")
+    typing_effect("Correct answer!\n\nNow for your seventh question: If a program's code contains an IF statement, and the condition inside the IF is False, what happens??")
     response=input('Your options are:\nA: The code under the IF statement runs anyway\nB: The program ends\nC: The program skips to the next code block after the IF statement\nD: The previous code lines loop until the IF statement is true\n\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
@@ -113,11 +120,11 @@ If a program's code contains an IF statement, and the condition inside the IF is
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_8():
-    typing_effect("Correct answer!\n\nNow for your eighth question: ?")
-    response=input('Your options are:\nA: \nB: \nC: \nD: \n\nYour answer is: ')
-    if response.lower() == '':
+    typing_effect("Correct answer!\n\nNow for your eighth question: A malicious program disguised as a legitimate one (like a free game or utility) is commonly known as what type of malware?")
+    response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
+    if response.lower() == 'a':
         print("\033[H\033[J",end="")
         question_9()
     else:
@@ -126,11 +133,11 @@ def question_8():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_9():
-    typing_effect("Correct answer!\n\nNow for your ninth question: ?")
-    response=input('Your options are:\nA: \nB: \nC: \nD: \n\nYour answer is: ')
-    if response.lower() == '':
+    typing_effect("Correct answer!\n\nNow for your ninth question: What is the main function of an Operating System (OS)?")
+    response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate and providing you with a user interface(UI)\nD: Allowing hackers to access your files\n\nYour answer is: ")
+    if response.lower() == 'c':
         print("\033[H\033[J",end="")
         question_10()
     else:
@@ -139,11 +146,11 @@ def question_9():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
+            start()
 def question_10():
-    typing_effect("Correct answer!\n\nNow for your tenth and final question: ?")
-    response=input('Your options are:\nA: \nB: \nC: \nD: \n\nYour answer is: ')
-    if response.lower() == '':
+    typing_effect("Correct answer!\n\nNow for your tenth and final question: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
+    response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
+    if response.lower() == 'a':
         print("\033[H\033[J",end="")
         print("Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON! Here is a million dollars.\n")
         print('YOU WON THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
@@ -153,5 +160,5 @@ def question_10():
         print('YOU LOST!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
-            game_start()
-game_start()
+            start()
+start_game()
