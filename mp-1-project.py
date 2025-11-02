@@ -7,24 +7,24 @@ def typing_effect(text):
         time.sleep(0.05)
 def game_start():
     print("\033[H\033[J",end="")
-    print('You wake up to find yourself in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
+    print('You wake up to find yourself in a strange room with only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
     time.sleep(0.5)
     print('The host announces:\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
     time.sleep(0.5)
     print('Do you want to play or not? Type "y" for yes or "n" for no.')
     start_quiz=input()
     if start_quiz.lower() == 'y':
-        print('Your first question is: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
+        print('You must respond only with the letter of your answer choice.\nYour first question: This is a method of scamming characterized by\npersuasive or urgent messages through call, text, or email. What is this?\n')
         response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is:')
-        if response.lower() == 'd' or response.lower() == 'phishing':
+        if response.lower() == 'd':
             print("\033[H\033[J",end="")
-            typing_effect('Correct answer!\n\nNow for your second question:')
-            response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is:')
-            if response.lower() == '' or response.lower() == '':
+            typing_effect('Correct answer!\n\nNow for your second question: What component of a computer is responsible for executing instructions and performing calculations?\n')
+            response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is:')
+            if response.lower() == 'c':
                 print("\033[H\033[J",end="")
                 typing_effect('Correct answer!\n\nNow for your third question:')
                 response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is:')
-                if response.lower() == '' or response.lower() == '':
+                if response.lower() == '':
                     print("\033[H\033[J",end="")
                     typing_effect('Correct answer!\n\nNow for your fourth question:')
                     response=input('Your options are:\nA: \nB: \nC: \nD: =\n\nYour answer is:')
@@ -60,8 +60,8 @@ def game_start():
             if restart.lower() == 'r':
                 game_start()
     else:
-        typing_effect("The announcer pulls out a gun and shoots you.\n")
-        typing_effect('YOU DIED!\n')
+        print("The announcer takes out a golden Audemars Piguet watch from his pocket.\nYou recognize it as YOUR AP Royal Oak that you received as a birthday\ngift from your best friend. You watch sadly as he sells the watch to a\nwealthy audience member for a large sum of money.\n")
+        typing_effect('YOU LOSE!\n')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
                 game_start()
