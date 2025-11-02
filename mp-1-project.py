@@ -91,7 +91,7 @@ def question_4():
         else:
             start()
 def question_5():
-    typing_effect("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary\nnumber 1011?")
+    typing_effect("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary\nnumber 1011?\n")
     response=input('Your options are:\nA: 11\nB: 67\nC: 45 \nD: 12\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -106,7 +106,7 @@ def question_5():
         else:
             start()
 def question_6():
-    typing_effect("Correct answer!\n\nNow for your sixth question: In computer science, what term is used to\ndescribe how the execution time or memory requirements of an algorithm change as the input size grows??")
+    typing_effect("Correct answer!\n\nNow for your sixth question: In computer science, what term is used to\ndescribe how the execution time or memory requirements of an algorithm\nchange as the input size grows?\n")
     response=input('Your options are:\nA: Recursion\nB: Abstraction\nC: Debugging\nD: Complexity\n\nYour answer is: ')
     if response.lower() == 'd':
         print("\033[H\033[J",end="")
@@ -121,7 +121,7 @@ def question_6():
         else:
             start()
 def question_7():
-    typing_effect("Correct answer!\n\nNow for your seventh question: If a program's code contains an IF\nstatement, and the condition inside the IF is False, what happens??")
+    typing_effect("Correct answer!\n\nNow for your seventh question: If a program's code contains an IF\nstatement, and the condition inside the IF is False, what happens?\n")
     response=input('Your options are:\nA: The code under the IF statement runs anyway\nB: The program ends\nC: The program skips to the next code block after the IF statement\nD: The previous code lines loop until the IF statement is true\n\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
@@ -136,7 +136,7 @@ def question_7():
         else:
             start()
 def question_8():
-    typing_effect("Correct answer!\nNow, for the last three questions, let's up the ante a little bit. For\nyour eighth question: A malicious program disguised as a legitimate one\n(like a free game or utility) is commonly known as what type of malware?")
+    typing_effect("Correct answer!\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate one\n(like a free game or utility) is commonly known as what type of malware?\n")
     response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -151,14 +151,14 @@ def question_8():
         else:
             start()
 def question_9():
-    typing_effect("Correct answer!\n\nNow for your ninth question: What is the main function of an Operating System (OS)?")
+    typing_effect("Correct answer!\n\nNow for your ninth question: What is the main function of an operating\nsystem (OS)?\n")
     response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate and providing you with a user interface(UI)\nD: Allowing hackers to access your files\n\nYour answer is: ")
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
         question_10()
     else:
         print("\033[H\033[J",end="")
-        typing_effect(f'Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots the dog.\nYou begin to cry as the injured dog crawls tries to crawl towards you.\n')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots the dog.\nYou begin to cry as the injured dog crawls tries to crawl towards you.\n')
         print('YOU LOSE!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
@@ -166,7 +166,7 @@ def question_9():
         else:
             start()
 def question_10():
-    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this question is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
+    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
     response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
