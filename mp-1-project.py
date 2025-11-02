@@ -136,7 +136,7 @@ def question_7():
         else:
             start()
 def question_8():
-    print("Correct answer!\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate one\n(like a free game or utility) is commonly known as what type of malware?\n")
+    print("Correct answer!\n\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate\none (like a free game or utility) is commonly known as what type of malware?\n")
     response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
@@ -152,7 +152,7 @@ def question_8():
             start()
 def question_9():
     print("Correct answer!\n\nNow for your ninth question: What is the main function of an operating\nsystem (OS)?\n")
-    response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate and providing you with a user interface(UI)\nD: Allowing hackers to access your files\n\nYour answer is: ")
+    response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate\nD: Allowing hackers to access your files\n\nYour answer is: ")
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
         question_10()
@@ -166,11 +166,11 @@ def question_9():
         else:
             start()
 def question_10():
-    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?\n")
+    print("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to\nexecute 5 times, and an IF statement inside the loop causes a break\ncommand to execute on the 3rd iteration, how many times will the loop's body complete execution?\n")
     response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
-        print("'Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON!\nHere is a million dollars for your ability to keep a cool head under pressure.' You are released from the chair and are given a check for a million dollars. You are then sent back home to enjoy your life.\n")
+        typing_effect("'Y-you did it. I-I can't believe it. You actually did it. You answered\nall of the questions correctly. YOU WON! Here is a million dollars for\nyour ability to keep a cool head under pressure.' You are released from the chair and are given a check for a million dollars. You are then sent back home to enjoy your life.\n")
         print('YOU WIN THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
     else:
         print("\033[H\033[J",end="")
