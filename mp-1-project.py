@@ -23,13 +23,17 @@ def start():
     start_quiz=input()
     if start_quiz.lower() == 'y':
         print('\nYou must respond only with the letter of your answer choice.')
+        time.sleep(0.5)
         question_1()
     else:
         print("\nThe announcer takes out a golden Audemars Piguet watch from his pocket.\nYou recognize it as YOUR AP Royal Oak that you received as a birthday\ngift from your best friend. You watch sadly as he sells the watch to a\nwealthy audience member for a large sum of money.\n")
+        time.sleep(0.5)
         print('YOU LOST!\n')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == 'r':
-                start()
+            start()
         else:
             start()
 def question_1():
@@ -37,12 +41,16 @@ def question_1():
     response=input('Your options are:\nA: freaking\nB: fracking\nC: fishing\nD: phishing\n\nYour answer is: ')
     if response.lower() == 'd':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_2()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nYou are sent back home and you open your bank account to find that there are ZERO DOLLARS LEFT!\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -52,25 +60,35 @@ def question_2():
     response=input('Your options are:\nA: Hard Disk Drive\nB: Motherboard\nC: CPU\nD: RAM\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_3()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer wheels your expensive gaming setup on stage using a rolling\ntable. You watch as a large man shows up with a sledgehammer and destroys\nyour setup.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
+        else:
+            start
 def question_3():
     print("Correct answer!\n\nNow for your third question: Which data type is best suited for storing a\nperson's age in a programming language?\n")
     response=input('Your options are:\nA: String\nB: Integer\nC: Boolean\nD: Floating point\n\nYour answer is: ')
     if response.lower() == 'b':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_4()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings your expensive 3D printer and all of your 3D\nprinting projects on stage. He then breaks the printer and shatters the\nplastic prints with a hammer.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -80,12 +98,16 @@ def question_4():
     response=input('Your options are:\nA: Hypertext Transfer Protocol (HTTP)\nB: File Transfer Protocol (FTP)\nC: Simple Mail Transfer Protocol (SMTP)\nD: Transmission Control Protocol (TCP)\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_5()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings your car on stage and sets it on fire.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -95,12 +117,16 @@ def question_5():
     response=input('Your options are:\nA: 11\nB: 67\nC: 45 \nD: 12\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_6()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer picks up your phone and throws it on the floor. He then\npulls a gun out of his pocket and shoots the phone until the screen\nbreaks.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -110,12 +136,16 @@ def question_6():
     response=input('Your options are:\nA: Recursion\nB: Abstraction\nC: Debugging\nD: Complexity\n\nYour answer is: ')
     if response.lower() == 'd':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_7()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer connects his computer to the quiz screen and makes you\nwatch as he hacks into your Google account. He then deletes all of your\nfiles and projects.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -125,27 +155,35 @@ def question_7():
     response=input('Your options are:\nA: The code under the IF statement runs anyway\nB: The program ends\nC: The program skips to the next code block after the IF statement\nD: The previous code lines loop until the IF statement is true\n\nYour answer is: ')
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_8()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings all of your robotics projects into the room and\nthrows them into a trash compactor, which crushes the robots.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
             start()
 def question_8():
     print("Correct answer!\n\nNow, for the last three questions, let's up the ante a little bit.\nFor your eighth question: A malicious program disguised as a legitimate\none (like a free game or utility) is commonly known as what type of\nmalware?\n")
-    response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
+    response=input('Your options are:\nA: Trojan\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_9()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer projects a live feed of your house on the screen and makes you watch as his associates set it on fire. The house is empty, so no one\nis hurt.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -155,12 +193,16 @@ def question_9():
     response=input("Your options are:\nA: Storing the user's files\nB: Connecting the computer to the internet\nC: Allowing all of a computer's parts to communicate\nD: Allowing hackers to access your files\n\nYour answer is: ")
     if response.lower() == 'c':
         print("\033[H\033[J",end="")
+        time.sleep(0.5)
         question_10()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. You watch in horror as he pulls a gun out of his pocket and shoots the dog. You begin to cry as the injured dog crawls tries to crawl\ntowards you in a desperate plea for help.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
@@ -175,8 +217,11 @@ def question_10():
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. He then pulls his gun out of his pocket and shoots you. You hear\nyour dog crying as you lose consciousness.\n')
+        time.sleep(0.5)
         print('YOU LOST!')
+        time.sleep(0.5)
         restart=input('Press enter to restart: ')
+        time.sleep(0.5)
         if restart.lower() == '':
             start()
         else:
