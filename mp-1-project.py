@@ -9,13 +9,13 @@ def start_game():
     print("\033[H\033[J",end="")
     print('This is a game about a wealthy white-hat hacker who is forced to complete\na dangerous quiz. Type "start" and press enter to start the game.')
     start_input=input('Type "start" here and press enter: ')
-    if start_input.lower == 'start':
+    if start_input.lower() == 'start':
         start()
     else:
         start_game()
 def start():
     print("\033[H\033[J",end="")
-    print('You wake up to find yourself in a strange room wearing only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
+    print('You wake up to find yourself strapped to a chair in a strange room wearing only your pajamas and\nnone of the valuables you keep on your person. You look around and find\nthat you are in a trivia game run by black-hat hackers\nwith ties to the mafia. You wonder: "Is this because I helped stop some\nransomware?"\n')
     time.sleep(0.5)
     print('The host announces:\n"Answer ALL TEN QUESTIONS CORRECTLY or...\nyou FAIL THE QUIZ and something REALLY BAD will happen to you.\nDO YOU WANT TO PLAY OR NOT?"\n')
     time.sleep(0.5)
@@ -26,7 +26,7 @@ def start():
         question_1()
     else:
         print("\nThe announcer takes out a golden Audemars Piguet watch from his pocket.\nYou recognize it as YOUR AP Royal Oak that you received as a birthday\ngift from your best friend. You watch sadly as he sells the watch to a\nwealthy audience member for a large sum of money.\n")
-        print('YOU LOST!\n')
+        print('YOU LOSE!\n')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
                 start()
@@ -39,7 +39,7 @@ def question_1():
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nYou are sent back home and you open your bank account to find that there are ZERO DOLLARS LEFT!')
-        print('YOU LOST!')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
@@ -52,7 +52,7 @@ def question_2():
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer wheels in your expensive gaming setup on a rolling table.\nYou watch in horror as a large man walks on stage with a sledgehammer and destroys your setup.\n')
-        print('YOU LOST!')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
@@ -65,33 +65,33 @@ def question_3():
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer brings in your LEGO UCS Millennium Falcon on a rolling\ntable. You watch as the announcer picks up the model and throws it on the\nground, causing the model to break.\n')
-        print('YOU LOST!')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
 def question_4():
     typing_effect("Correct answer!\n\nNow for your fourth question: Which protocol is primarily responsible for transmitting web pages across the internet?")
     response=input('Your options are:\nA: Hypertext Transfer Protocol (HTTP)\nB: File Transfer Protocol (FTP)\nC: Simple Mail Transfer Protocol (SMTP)\nD: Transmission Control Protocol (TCP)\n\nYour answer is: ')
-    if response.lower() == 'b':
+    if response.lower() == 'a':
         print("\033[H\033[J",end="")
         question_5()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer rolls in your Lamborghini Urus SUV and sets it on fire.\n')
-        print('YOU LOST!')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
 def question_5():
     typing_effect("Correct answer!\n\nNow for your fifth question: What is the decimal equivalent of the binary number 1011?")
-    response=input('Your options are:\nA: 11\nB: 67\nC:45 \nD: 12\n\nYour answer is: ')
+    response=input('Your options are:\nA: 11\nB: 67\nC: 45 \nD: 12\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
         question_6()
     else:
         print("\033[H\033[J",end="")
         typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer picks up your phone and throws it on the floor. He then pulls out a gun and shoots the phone until the screen breaks.\n')
-        print('YOU LOST!')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
@@ -103,8 +103,8 @@ def question_6():
         question_7()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer connects his computer to the quiz screen and makes you watch as he hacks into your Google account. He then deletes all of your files.\n')
-        print('YOU LOST!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer connects his computer to the quiz screen and makes you watch as he hacks into your Google account. He then deletes all of your files and projects.\n')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
@@ -116,21 +116,21 @@ def question_7():
         question_8()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer\n')
-        print('YOU LOST!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer brings all of your robotics projects into the room and throws them into a trash compactor, which crushes the robots.\n')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
 def question_8():
-    typing_effect("Correct answer!\n\nNow for your eighth question: A malicious program disguised as a legitimate one (like a free game or utility) is commonly known as what type of malware?")
+    typing_effect("Correct answer!\nNow, for the last three questions, let's up the ante a little bit. For your eighth question: A malicious program disguised as a legitimate one (like a free game or utility) is commonly known as what type of malware?")
     response=input('Your options are:\nA: Trojan horse\nB: Rootkit\nC: Worm\nD: Spyware\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
         question_9()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer\n')
-        print('YOU LOST!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer projects a live feed of your house on the screen and makes you watch as his associates set it on fire. The house is empty, so no one is hurt.\n')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
@@ -142,22 +142,22 @@ def question_9():
         question_10()
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer\n')
-        print('YOU LOST!')
+        typing_effect(f'Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots the dog.\nYou begin to cry as the injured dog crawls tries to crawl towards you.\n')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
 def question_10():
-    typing_effect("Correct answer!\n\nNow for your tenth and final question: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
+    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this question is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
     response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
-        print("Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON! Here is a million dollars.\n")
-        print('YOU WON THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
+        print("Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON!\nHere is a million dollars for your ability to keep a cool head under pressure.\n")
+        print('YOU WIN THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer\n')
-        print('YOU LOST!')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer drags your dog into the room. He then pulls his gun out of his pocket and shoots you. You watch your dog crying as you lose consciousness.\n')
+        print('YOU LOSE!')
         restart=input('Type "R" or "r" to restart:')
         if restart.lower() == 'r':
             start()
