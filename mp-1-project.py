@@ -174,7 +174,7 @@ def question_10():
         print('YOU WON!\nRestart by refreshing the console and give this to a friend to try.')
     else:
         print("\033[H\033[J",end="")
-        print('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. He then pulls his gun out of his pocket and shoots you. You hear\nyour dog crying as you lose consciousness.\n')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\nThe announcer releases you from the chair and drags your dog into the\nroom. He then pulls his gun out of his pocket and shoots you. You hear\nyour dog crying as you lose consciousness.\n')
         print('YOU LOST!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
