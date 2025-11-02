@@ -166,15 +166,15 @@ def question_9():
         else:
             start()
 def question_10():
-    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?")
+    typing_effect("Correct answer!\n\nNow for your tenth and final question. Answer carefully, because this\nquestion is the most unforgiving of them all: If a FOR loop is set to execute 5 times, and an IF statement inside the loop causes a break command to execute on the 3rd iteration, how many times will the loop's body complete execution?\n")
     response=input('Your options are:\nA: 2\nB: 3\nC: 6\nD: 7\n\nYour answer is: ')
     if response.lower() == 'a':
         print("\033[H\033[J",end="")
-        print("Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON!\nHere is a million dollars for your ability to keep a cool head under pressure.\n")
+        print("'Y-you did it. I-I can't believe it. You actually did it. You answered all of the questions correctly.\nYOU WON!\nHere is a million dollars for your ability to keep a cool head under pressure.' You are released from the chair and are given a check for a million dollars. You are then sent back home to enjoy your life.\n")
         print('YOU WIN THE QUIZ GAME!\nRestart by refreshing the console and give this to a friend to try.')
     else:
         print("\033[H\033[J",end="")
-        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer drags your dog into the room. He then pulls his gun out of his pocket and shoots you. You watch your dog crying as you lose consciousness.\n')
+        typing_effect('Wrong answer. YOU FAILED THE QUIZ!\n The announcer releases you from the chair and drags your dog into the room. He then pulls his gun out of his pocket and shoots you. You watch your dog crying as you lose consciousness.\n')
         print('YOU LOSE!')
         restart=input('Press enter to restart: ')
         if restart.lower() == '':
