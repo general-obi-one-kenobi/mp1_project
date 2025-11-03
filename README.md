@@ -1,2 +1,1 @@
-# [Sample text]
-[Sample text]
+# [A Trivia Trap]
