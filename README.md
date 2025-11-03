@@ -1,5 +1,7 @@
 # 	[A Trivia Trap](a-trivia-trap.py) by [me](https://github.com/general-obi-one-kenobi)
 ## Overview
-This is a text-based game where you play as a white-hat hacker
+This is a text-based game where you play as a wealthy white-hat hacker who is captured by black-hat hackers with connections to the mafia and forced to participate in a high-stakes quiz game. You must answer all of the questions correctly to continue and if you answer any questions incorrectly, the game ends immediately and the protagonist is punished by the gangsters before a loss message appears and you are prompted to restart the game. I will not explain the full story of the game as doing so would ruin the story. All of the questions in the quiz are about what we have learned in class this year and last year. Punishments for an incorrect answer involve the protagonist losing items (or groups of items) of progressively greater importance as you move through the questions. If you clear all ten questions, you win the game and the game ends after recommending that you share it with friends.
 ## Technical Summary
+This game is made in Python and you can create a GitHub codespace to run it.
 ## Learning Goals
+I created this game to improve my skills in creating Python games and to get better at writing original stories for games. I wanted to try creating questions by making each question into a function because I wanted to practice creating and calling functions. I also did this to reduce lag, as the project experienced severe lag when I originally made the whole game into one function. I wanted to make the game into a function or set of functions so it could have the ability to restart without needing to refresh the terminal.
